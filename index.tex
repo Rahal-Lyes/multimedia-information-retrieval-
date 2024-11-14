@@ -1,22 +1,24 @@
 \documentclass[a4paper, 12pt, oneside]{report}
-\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
-\usepackage[utf8]{inputenc} % linux
-% Packages nécessaires
-\usepackage[frenchb]{babel}
-\usepackage[english]{babel}
-%\usepackage[english,francais]{babel}
-\usepackage[pdftex]{graphicx}
-%\usepackage{epstopdf} 
-\usepackage{graphics}
-\usepackage{fancyhdr} 
-\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
-\linespread{1.5}
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry} % Marges du document
+\usepackage[utf8]{inputenc} % Encodage UTF-8 pour Linux
+\usepackage[frenchb]{babel} % Langue principale en français
+\usepackage{graphicx} % Inclusion d'images
+\usepackage{fancyhdr} % Personnalisation de l'en-tête et du pied de page
+\usepackage[Lenny]{fncychap} % Style de chapitres
+\linespread{1.5} % Interligne
+
+% Style de la page
 \pagestyle{fancy}
-\usepackage[Lenny]{fncychap}
-
-
+\fancyhead{} % En-tête vide
+\fancyfoot{} % Pied de page vide
+\fancyfoot[C]{\thepage} % Numérotation centrée en bas de page
 
 \begin{document}
 
+% Inclusion de la page de garde
 \input{page-de-garde.tex}
+
+% Inclusion de l'introduction
+\input{introduction.tex}
+
 \end{document}
