@@ -89,6 +89,152 @@
  priorité. Ce modèle s'adapte aux incertitudes inhérentes à la recherche et est
  souvent amélioré par des techniques comme le feedback de pertinence ou
  l'apprentissage automatique. Il est particulièrement efficace pour intégrer
- différents types de données multimodales. \vfill
+ différents types de données multimodales.
+ \section{Requête multimodale}
+ Les requêtes multimodales dans la Recherche d'Informations Multimodales (MIR)
+ sont des requêtes où plusieurs types de médias ou modalités sont utilisés
+ ensemble pour améliorer la précision des résultats de recherche. Ces modalités
+ peuvent inclure du texte, des images, des vidéos, des éléments audio, des
+ gestes, ou d'autres types de données. Ce type de recherche est particulièrement
+ utile dans des contextes où une seule modalité, comme le texte ou l'image, ne
+ permet pas de capturer suffisamment d'informations pour retourner des résultats
+ pertinents
+ \subsection{Processus de gestion des requêtes multimodales}
 
+ \textbf{1 -Fusion des modalités :} Lorsqu'une requête multimodale est lancée, les différents types de médias sont
+ traités et intégrés de manière cohérente. Par exemple, dans le cas d’une
+ requête comprenant un texte et une image, un système peut utiliser des
+ techniques de fusion de caractéristiques, où des vecteurs de caractéristiques
+ représentant le texte et l'image sont combinés. Ensuite, la similarité entre la
+ requête et les documents dans la base de données est calculée sur la base de
+ cette fusion. De même, pour des requêtes qui incluent à la fois des vidéos et
+ des éléments audio, des modèles de traitement multimodal peuvent être utilisés
+ pour extraire des caractéristiques pertinentes de chaque modalité (par exemple,
+ des objets détectés dans la vidéo et des fréquences spécifiques dans l'audio)
+ et pour les intégrer dans un espace de recherche commun.
+ \par
+ \textbf{2 -Alignement sémantique :}L'un des défis majeurs des requêtes multimodales est d'assurer un alignement
+ sémantique entre les différentes modalités. Par exemple, une image peut contenir des objets ou des scènes qui
+ ne sont pas directement exprimés par des mots dans une requête textuelle, et vice versa. Des techniques avancées
+ comme les réseaux neuronaux multimodaux sont utilisées pour apprendre les relations entre les différentes modalités
+ (par exemple, associant un objet visuel à des mots-clés dans une requête textuelle).
+ Le but est de s'assurer que les informations provenant de différentes modalités sont correctement interprétées pour
+ que le système puisse comprendre ce que l'utilisateur recherche, même si les termes textuels ne correspondent
+ pas exactement aux éléments visuels.
+
+ \par
+ \textbf{3 -Recherche basée sur des requêtes combinées :}
+ Par exemple, un utilisateur peut effectuer une recherche multimodale en combinant un texte descriptif avec une
+ image ou une vidéo. Un exemple concret serait une recherche dans une base de données d'images où l'utilisateur
+ soumet un texte comme « montagnes au coucher du soleil » et une image représentant un paysage montagneux.
+ Le système doit être capable d'analyser à la fois le texte pour en extraire les mots-clés (comme "montagnes" et
+ "coucher du soleil") et l'image pour en détecter les éléments visuels pertinents (comme les montagnes et les
+ couleurs chaudes). Ensuite, il associera ces informations pour retourner des résultats correspondant aux deux
+ modalités.
+
+ \par
+
+ \textbf{4 -Traitement des données audio et vidéo :}
+ Dans des cas plus complexes, comme la recherche multimodale dans des vidéos, la requête peut inclure à la fois du
+ contenu visuel et audio. Par exemple, un utilisateur pourrait soumettre un extrait audio d'une chanson et une image
+ d'un artiste pour retrouver des vidéos associées à cette chanson ou à cet artiste. Le système devra traiter le son
+ pour identifier des motifs ou des fréquences musicales, et analyser l'image pour en extraire des éléments visuels
+ tels que des visages ou des logos, avant de faire correspondre les deux types de données à des vidéos existantes
+ dans la base de données.
+
+ \section{Requête par contenu (Content-Based Retrieval)}
+ La requête par contenu (Content-Based Retrieval, ou CBR) est une approche où
+ l'utilisateur spécifie des critères de recherche directement basés sur le
+ contenu multimédia, plutôt que de s'appuyer sur des métadonnées associées comme
+ des titres, des mots-clés ou des descriptions. L'objectif est de retrouver des
+ objets multimédia similaires en fonction de leurs caractéristiques
+ intrinsèques, telles que les couleurs, les textures, les formes, ou encore les
+ sons.
+ \subsection{Recherche d'images}
+ La recherche d'images basée sur le contenu consiste à trouver des images
+ similaires à une image donnée. Au lieu d'utiliser des métadonnées comme des
+ mots-clés ou des tags, cette approche se concentre sur des descripteurs visuels
+ extraits directement de l'image. \par \textbf{1 -Les couleurs dominantes:}
+ La recherche peut être effectuée en comparant les histogrammes de couleurs ou
+ les caractéristiques de couleur (par exemple, les couleurs dominantes dans une
+ image). \par \textbf{2 -Les textures :}Les techniques de reconnaissance de
+ textures utilisent des algorithmes comme les matrices de co-occurrence pour
+ identifier des motifs visuels similaires.
+ \par \textbf{3 -Les formes :}
+ Les descripteurs de formes comme les contours ou les régions homogènes dans une image peuvent être utilisés pour
+ rechercher des images similaires en termes de structure visuelle. L'objectif est de permettre à l'utilisateur de
+ soumettre une image et de trouver d'autres images qui présentent des caractéristiques visuelles similaires,
+ facilitant ainsi la recherche par exemple de produits, de paysages ou de visuels similaires.
+ \subsection{Recherche vidéo}
+ La recherche vidéo basée sur le contenu s’appuie sur des extraits vidéo ou des
+ éléments spécifiques au sein des vidéos. Plutôt que de se fier uniquement aux
+ métadonnées (comme le titre de la vidéo), cette approche recherche dans le
+ contenu vidéo lui-même.
+
+ \par \textbf{1 -Les objets ou scènes dans les vidéos :}L’analyse des objets présents dans les vidéos (par exemple, un visage ou un véhicule) ou des scènes (comme un paysage ou un intérieur) peut être effectuée grâce à des techniques de vision par ordinateur, telles que la détection d'objets.
+ \par \textbf{2 -Les mouvements et transitions :}Le suivi de mouvements ou d'actions au sein de la vidéo permet d'identifier des vidéos contenant des séquences similaires, même si elles diffèrent par d'autres aspects.
+ \par \textbf{3 -Les métadonnées visuelles et audio :}La recherche vidéo peut également s’appuyer sur des caractéristiques audio (comme des dialogues ou des effets sonores) et visuelles (comme des changements de scènes ou des objets détectés). Cela permet une recherche plus précise en fonction du contenu réel de la vidéo, permettant par exemple de retrouver des vidéos présentant des actions spécifiques ou des scènes similaires.
+ \subsection{Recherche audio}
+ La recherche dans les fichiers audio basée sur le contenu consiste à analyser
+ les caractéristiques sonores du fichier audio pour le comparer à la requête de
+ l'utilisateur.
+ \par \textbf{1 -La fréquence :}L'analyse de la fréquence permet de détecter des éléments comme la hauteur, les gammes ou les tonalités dans un fichier audio. La recherche peut être effectuée en comparant les spectres de fréquence des fichiers audio.
+ \par \textbf{2 -Le rythme et la structure temporelle:}Pour la musique, la recherche peut être basée sur des motifs rythmiques ou des structures musicales spécifiques. Cela permet de retrouver des morceaux qui partagent un rythme similaire, même si le reste de la composition est différent.
+ \par \textbf{3 -Les motifs audio spécifiques :}L'extraction de motifs récurrents ou de signatures sonores peut être utilisée pour rechercher des éléments audio particuliers dans de grands ensembles de données sonores (comme des discours, des effets sonores, ou des extraits musicaux).
+
+ \section{Mesure de la performance}
+ La mesure de la performance dans les systèmes de recherche d'informations multimédia (MIR) est cruciale pour évaluer l'efficacité et la pertinence des résultats retournés. Ces systèmes cherchent à fournir des résultats multimodaux (texte, image, audio, vidéo) en réponse à une requête donnée
+ \subsection{Précision}
+ La précision est une mesure qui indique la proportion de documents ou objets
+ pertinents parmi les résultats retournés par le système de recherche. Elle est
+ exprimée par la formule suivante :
+
+ \[
+   \text{Précision} = \frac{\text{Nombre de documents pertinents récupérés}}{\text{Nombre total de documents récupérés}}
+   \vspace{1cm}
+ \]
+ En d'autres termes, elle mesure combien de résultats récupérés par le système
+ sont réellement pertinents par rapport à l'ensemble des résultats retournés.
+ Une précision élevée signifie que le système fournit principalement des
+ résultats pertinents, mais cela ne garantit pas nécessairement que tous les
+ documents pertinents ont été trouvés.
+
+ \subsection{Rappel}
+ Le rappel, également connu sous le nom de sensibilité ou de couverture, est une
+ mesure qui évalue la capacité du système à retrouver tous les documents
+ pertinents disponibles dans la base de données. Il est défini comme la
+ proportion de documents pertinents récupérés parmi tous les documents
+ pertinents existants. La formule du rappel est la suivante :
+
+ \[
+   \text{Rappel}=\frac{\text{Nombre de document pertinents récupérés}}{\text{Nombre total de documents pertinents}}
+   \vspace{1cm}
+ \]
+
+ Un \textbf{rappel élevé} signifie que le système est capable de retrouver une
+ grande partie des documents pertinents dans la base de données. Cependant, cela
+ peut entraîner des résultats moins précis si le système retourne également des
+ documents non pertinents.
+ \subsection{F-mesure}
+ \textbf{La F-mesure} (ou F-score) est une mesure combinée qui cherche à équilibrer la
+ précision et le rappel. Elle est particulièrement utile lorsque ces deux
+ critères sont en conflit. La F-mesure est la moyenne harmonique entre la
+ précision et le rappel, ce qui lui permet de donner une évaluation unique tout
+ en tenant compte des deux dimensions. La formule de la F-mesure est la suivante:
+ \par
+
+ \[
+   \text{F-mesure} = 2 \times \frac{\text{Précision}\times\text{Rappel}}{\text{Précision}+\text{Rappel}}
+   \vspace{1cm}
+ \]
+
+ La F-mesure est importante car elle fournit une vue d'ensemble de la
+ performance du système, en s'assurant qu'un équilibre est trouvé entre
+ récupérer des résultats pertinents (précision) et retrouver la majorité des
+ résultats pertinents (rappel). Une \textbf{F-mesure élevée} indique un bon compromis
+ entre les deux, ce qui est essentiel dans un système MIR où les utilisateurs
+ veulent à la fois des résultats pertinents et une couverture maximale des
+ éléments pertinents.
+
+ \vfill
 \end{section}

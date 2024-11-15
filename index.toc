@@ -9,3 +9,13 @@
 \contentsline {section}{\numberline {1.3}Recherche d'informations multimédia}{5}{}%
 \contentsline {subsection}{\numberline {1.3.1}Modèle vectoriel}{5}{}%
 \contentsline {subsection}{\numberline {1.3.2}Modèle probabiliste}{5}{}%
+\contentsline {section}{\numberline {1.4}Requête multimodale}{5}{}%
+\contentsline {subsection}{\numberline {1.4.1}Processus de gestion des requêtes multimodales}{6}{}%
+\contentsline {section}{\numberline {1.5}Requête par contenu (Content-Based Retrieval)}{7}{}%
+\contentsline {subsection}{\numberline {1.5.1}Recherche d'images}{7}{}%
+\contentsline {subsection}{\numberline {1.5.2}Recherche vidéo}{8}{}%
+\contentsline {subsection}{\numberline {1.5.3}Recherche audio}{8}{}%
+\contentsline {section}{\numberline {1.6}Mesure de la performance}{9}{}%
+\contentsline {subsection}{\numberline {1.6.1}Précision}{9}{}%
+\contentsline {subsection}{\numberline {1.6.2}Rappel}{9}{}%
+\contentsline {subsection}{\numberline {1.6.3}F-mesure}{10}{}%
