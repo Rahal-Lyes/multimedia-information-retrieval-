@@ -1,0 +1,94 @@
+
+\begin{section}
+
+ \chapter{Concepts fondamentaux de MIR}
+ %  \addcontentsline{toc}{chapter}{Concepts fondamentaux de MIR}
+ Les concepts fondamentaux de la Récupération d'Information basée sur la
+ Recherche de Médias (MIR -- Multimedia Information Retrieval) englobent
+ plusieurs notions clés qui permettent de rechercher et de récupérer des
+ informations multimédia (textes, images, audio, vidéo, etc.) de manière
+ efficace. Voici un aperçu des concepts essentiels dans ce domaine:
+ \setcounter{section}{1}
+ \section{Indexation multimodale}
+ %  \addcontentsline{toc}{section}{Indexation multimodale}
+
+ L'indexation est le processus d'attribution de métadonnées aux objets
+ multimédia afin qu'ils puissent être rapidement récupérés lors d'une requête.
+ L'indexation multimodale fait référence à l'organisation de différents types de
+ médias (textes, images, vidéos, audio) de manière à permettre une recherche
+ efficace sur l'ensemble de ces données.
+
+ \subsection{Indexation textuelle}
+ %  \addcontentsline{toc}{subsection}{Indexation textuelle}
+ L’indexation textuelle consiste à associer des mots-clés ou des métadonnées à
+ des documents textuels pour en faciliter la recherche et l’organisation. Elle
+ repose sur l’identification des termes significatifs ou expressions clés qui
+ représentent le contenu, tels que énergie solaire ou transition énergétique
+ pour un article sur les énergies renouvelables. Les métadonnées peuvent inclure
+ des informations comme l’auteur, la date de création, les catégories
+ thématiques ou un résumé descriptif. L’indexation peut être effectuée
+ manuellement par des experts ou automatiquement à l’aide d’algorithmes
+ utilisant des techniques de traitement automatique du langage naturel (TALN).
+ Ce processus améliore considérablement l’accès à l’information, permet de
+ retrouver rapidement des documents pertinents dans de grandes bases de données
+ et optimise les moteurs de recherche. Par exemple, pour un document intitulé
+ "L'intelligence artificielle dans la médecine moderne", les mots-clés
+ pourraient inclure IA, médecine, ou diagnostic assisté par ordinateur.
+ \subsection{Indexation visuelle}
+ %  \addcontentsline{toc}{subsection}{Indexation visuelle}
+
+ L’indexation visuelle consiste à extraire et analyser les caractéristiques
+ visuelles des images et vidéos pour les organiser, les classifier et faciliter
+ leur recherche. Ces caractéristiques peuvent inclure des informations telles
+ que les couleurs dominantes, les textures, les formes ou encore les objets
+ reconnus au sein des images. Par exemple, une image contenant un coucher de
+ soleil pourra être associée à des teintes chaudes (orange, rouge), des textures
+ de ciel et des formes naturelles comme des montagnes. L’indexation visuelle
+ repose souvent sur des algorithmes d’apprentissage automatique ou de vision par
+ ordinateur qui permettent d’identifier et d’étiqueter automatiquement les
+ contenus visuels. Ce processus est largement utilisé dans des domaines tels que
+ les bibliothèques d’images, les moteurs de recherche visuelle, ou encore les
+ systèmes de surveillance, permettant une navigation intuitive et efficace parmi
+ des collections visuelles volumineuses.
+ \subsection{Indexation audio}
+ %  \addcontentsline{toc}{subsection}{Indexation audio}
+ L’indexation audio implique l’identification et l’extraction de
+ caractéristiques spécifiques des fichiers audio pour en faciliter
+ l’organisation et la recherche. Parmi ces caractéristiques, on trouve les
+ fréquences, qui permettent d’identifier les tonalités ou les gammes, et les
+ rythmes, qui aident à décrire le tempo et la structure temporelle du son.
+ D’autres éléments comme les timbres (ou les qualités sonores) et les motifs
+ musicaux peuvent également être analysés pour mieux comprendre le contenu
+ audio. Cette indexation est souvent effectuée à l’aide d’algorithmes de
+ traitement du signal et d’apprentissage automatique qui reconnaissent des
+ schémas audio distinctifs, facilitant ainsi la catégorisation de fichiers
+ musicaux, les recherches par contenu, ou l’identification d’échantillons
+ sonores dans de grandes bases de données.
+
+ \section{Recherche d'informations multimédia}
+ %  \addcontentsline{toc}{section}{Recherche d'informations multimédia}
+ Dans MIR, les informations sont représentées sous des formats spécifiques pour
+ faciliter leur récupération. Cela inclut la représentation de données
+ multimédia sous forme de vecteurs ou de signatures, souvent avec des
+ caractéristiques extraites des éléments multimédias.
+ \subsection{Modèle vectoriel}
+ Le modèle vectoriel pour la recherche d'informations multimédia représente les
+ documents et les requêtes sous forme de vecteurs dans un espace
+ multidimensionnel. Chaque dimension correspond à une caractéristique (termes,
+ couleurs, fréquences, etc.), et la pertinence est calculée en mesurant la
+ similarité, souvent via le cosinus de l'angle entre les vecteurs. Ce modèle est
+ largement utilisé pour classer et retrouver des contenus en fonction de leur
+ similarité avec la requête
+ \subsection{Modèle probabiliste}
+ Il repose sur l'idée d'estimer la probabilité qu'un document soit pertinent
+ pour une requête spécifique. Chaque document est représenté par un ensemble de
+ caractéristiques (termes textuels, éléments visuels ou audio), et un score de
+ pertinence est calculé en fonction de ces caractéristiques et de leur
+ importance pour l'utilisateur. Les documents sont ensuite classés en ordre
+ décroissant de probabilité pour retourner les résultats les plus pertinents en
+ priorité. Ce modèle s'adapte aux incertitudes inhérentes à la recherche et est
+ souvent amélioré par des techniques comme le feedback de pertinence ou
+ l'apprentissage automatique. Il est particulièrement efficace pour intégrer
+ différents types de données multimodales. \vfill
+
+\end{section}

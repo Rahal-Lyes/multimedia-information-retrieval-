@@ -16,9 +16,15 @@
 \begin{document}
 
 % Inclusion de la page de garde
-\input{page-de-garde.tex}
 
+\input{page-de-garde.tex}
 % Inclusion de l'introduction
+
+\rhead{\textit{Table des matières}}
+\addcontentsline{toc}{chapter}{Table des matières}
+\tableofcontents{}
+
 \input{introduction.tex}
+\input{content.tex}  
 
 \end{document}
