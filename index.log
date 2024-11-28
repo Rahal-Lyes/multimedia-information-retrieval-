@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.1)  15 NOV 2024 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.1)  28 NOV 2024 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,7 +361,9 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>])
-(./index.toc)
+(./index.toc [1
+
+])
 \tf@toc=\write3
 \openout3 = `index.toc'.
 
@@ -380,9 +382,7 @@ l.2
 l.2 
     
 ? 
-[1
-
-]
+[2]
 Overfull \hbox (11.91069pt too wide) in paragraph at lines 10--17
 []\OT1/cmr/m/n/12 Les or-di-na-teurs, long-temps uti-lis^^Ses pour trai-ter des
  in-for-ma-tions tex-tuelles et num^^Seriques,
@@ -409,7 +409,7 @@ l.3
 l.3 
     
 ? 
-[2
+[3
 
 ]
 Chapitre 1.
@@ -423,53 +423,64 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) [3
+) [4
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-Overfull \hbox (14.76012pt too wide) in paragraph at lines 40--53
+Overfull \hbox (14.76012pt too wide) in paragraph at lines 41--50
 \OT1/cmr/m/n/12 images et vid^^Seos pour les or-ga-ni-ser, les clas-si-fier et 
 fa-ci-li-ter leur re-cherche. Ces ca-ract^^Seristiques
  []
 
 
-Overfull \hbox (6.68721pt too wide) in paragraph at lines 55--67
+Overfull \hbox (6.68721pt too wide) in paragraph at lines 54--61
 []\OT1/cmr/m/n/12 L'indexation au-dio im-plique l'iden-ti-fi-ca-tion et l'ex-tr
 ac-tion de ca-ract^^Seristiques sp^^Secifiques
  []
 
-[4] [5] [6] [7] [8]
-Overfull \hbox (9.62599pt too wide) in paragraph at lines 195--201
-\OT1/cmr/m/n/12 En d'autres termes, elle me-sure com-bien de r^^Sesultats r^^Se
-cup^^Ser^^Ses par le syst^^Reme sont r^^Seellement
- []
+[5] [6]) (./techniques.tex
+Runaway argument?
+{
+! Paragraph ended before \@sect was complete.
+<to be read again> 
+                   \par 
+l.3 
+    
+? 
+! Extra }, or forgotten \endgroup.
+\@xdblarg #1#2->#1[{#2}
+                       ]{#2}
+l.3 
+    
+? 
+[7]
+Chapitre 2.
+[8
 
-[9]) [10] (./index.aux)
+] [9] [10]) [11] (./index.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5353 strings out of 474222
- 86334 string characters out of 5748733
+ 5362 strings out of 474222
+ 86472 string characters out of 5748733
  1931975 words of memory out of 5000000
- 27529 multiletter control sequences out of 15000+600000
- 567897 words of font info for 62 fonts, out of 8000000 for 9000
+ 27535 multiletter control sequences out of 15000+600000
+ 568244 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,11n,69p,508b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 61i,11n,69p,301b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmr8a.pfb>
-Output written on index.pdf (11 pages, 138535 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/times/utmr8a.pfb>
+Output written on index.pdf (12 pages, 123793 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

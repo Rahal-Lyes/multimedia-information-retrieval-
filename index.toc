@@ -1,21 +1,28 @@
 \babel@toc {french}{}\relax 
 \contentsline {chapter}{Table des matières}{1}{}%
-\contentsline {chapter}{Introduction}{2}{}%
-\contentsline {chapter}{\numberline {1}Concepts fondamentaux de MIR}{3}{}%
-\contentsline {section}{\numberline {1.2}Indexation multimodale}{3}{}%
-\contentsline {subsection}{\numberline {1.2.1}Indexation textuelle}{3}{}%
-\contentsline {subsection}{\numberline {1.2.2}Indexation visuelle}{4}{}%
-\contentsline {subsection}{\numberline {1.2.3}Indexation audio}{4}{}%
-\contentsline {section}{\numberline {1.3}Recherche d'informations multimédia}{5}{}%
-\contentsline {subsection}{\numberline {1.3.1}Modèle vectoriel}{5}{}%
-\contentsline {subsection}{\numberline {1.3.2}Modèle probabiliste}{5}{}%
-\contentsline {section}{\numberline {1.4}Requête multimodale}{5}{}%
-\contentsline {subsection}{\numberline {1.4.1}Processus de gestion des requêtes multimodales}{6}{}%
-\contentsline {section}{\numberline {1.5}Requête par contenu (Content-Based Retrieval)}{7}{}%
-\contentsline {subsection}{\numberline {1.5.1}Recherche d'images}{7}{}%
-\contentsline {subsection}{\numberline {1.5.2}Recherche vidéo}{8}{}%
-\contentsline {subsection}{\numberline {1.5.3}Recherche audio}{8}{}%
-\contentsline {section}{\numberline {1.6}Mesure de la performance}{9}{}%
-\contentsline {subsection}{\numberline {1.6.1}Précision}{9}{}%
-\contentsline {subsection}{\numberline {1.6.2}Rappel}{9}{}%
-\contentsline {subsection}{\numberline {1.6.3}F-mesure}{10}{}%
+\contentsline {chapter}{Introduction}{3}{}%
+\contentsline {chapter}{\numberline {1}Concepts fondamentaux de MIR}{4}{}%
+\contentsline {section}{\numberline {1.1}Indexation multimodale}{4}{}%
+\contentsline {subsection}{\numberline {1.1.1}Indexation textuelle}{4}{}%
+\contentsline {subsection}{\numberline {1.1.2}Indexation visuelle}{5}{}%
+\contentsline {subsection}{\numberline {1.1.3}Indexation audio}{5}{}%
+\contentsline {section}{\numberline {1.2}Recherche d'informations multimédia}{5}{}%
+\contentsline {subsection}{\numberline {1.2.1}Modèle vectoriel}{5}{}%
+\contentsline {subsection}{\numberline {1.2.2}Modèle probabiliste}{6}{}%
+\contentsline {section}{\numberline {1.3}Requête multimodale}{6}{}%
+\contentsline {subsection}{\numberline {1.3.1}Processus de gestion des requêtes multimodales}{6}{}%
+\contentsline {paragraph}{Fusion des modalités :}{6}{}%
+\contentsline {paragraph}{Alignement sémantique :}{6}{}%
+\contentsline {paragraph}{Recherche basée sur des requêtes combinées :}{7}{}%
+\contentsline {chapter}{\numberline {2}techniques de récupération basée sur le contenu (CBR)}{8}{}%
+\contentsline {section}{\numberline {2.2}Applications pratiques}{8}{}%
+\contentsline {subsection}{\numberline {2.2.1} Recherche d’images}{8}{}%
+\contentsline {subsection}{\numberline {2.2.2}Recherche audio}{9}{}%
+\contentsline {subsection}{\numberline {2.2.3} Recherche vidéo}{9}{}%
+\contentsline {subsection}{\numberline {2.2.4} Recherche textuelle}{9}{}%
+\contentsline {section}{\numberline {2.3}Méthodologies détaillées}{10}{}%
+\contentsline {subsection}{\numberline {2.3.1} Extraction de caractéristiques}{10}{}%
+\contentsline {subsection}{\numberline {2.3.2}Mesures de similarité}{10}{}%
+\contentsline {subsection}{\numberline {2.3.3}Apprentissage automatique}{10}{}%
+\contentsline {section}{\numberline {2.4}Avantages des CBR}{11}{}%
+\contentsline {section}{\numberline {2.5}Défis et limites}{11}{}%

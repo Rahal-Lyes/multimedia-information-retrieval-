@@ -1,0 +1,98 @@
+
+\begin{section}
+
+\chapter{techniques de récupération basée sur le contenu (CBR)}
+Les techniques de récupération basées sur le contenu permettent d’identifier,
+de rechercher et de classer des éléments en analysant leurs caractéristiques
+intrinsèques. Contrairement aux approches traditionnelles qui se fondent sur
+des mots-clés ou des métadonnées (comme les tags ou descriptions), ces méthodes
+analysent directement le contenu des éléments, qu’il s’agisse de données
+visuelles, auditives ou textuelles.\par
+
+Les \textbf{principales étapes} du processus incluent :
+
+\begin{enumerate}
+    \item \textbf{Extraction de caractéristiques} : Conversion des éléments multimédias en des représentations numériques compactes appelées descripteurs (par exemple, histogrammes de couleurs, spectrogrammes pour l’audio, etc.).
+    \item \textbf{Indexation} : Organisation des descripteurs dans une structure de données adaptée (par exemple, arbre de recherche).
+    \item \textbf{Recherche et comparaison} : Comparaison des descripteurs d’une requête avec ceux des éléments stockés en utilisant des mesures de similarité.
+\end{enumerate}
+\setcounter{section}{1}
+\section{Applications pratiques}
+\subsection{ Recherche d’images}
+\textbf{Techniques utilisées :}
+\begin{itemize}
+    \item Histogrammes de couleurs : Mesures statistiques des couleurs dominantes d’une image.
+    \item Textures : Identification des motifs répétitifs dans une image (par exemple, lignes, points).
+    \item Formes : Analyse des contours et des structures géométriques.
+    \item Deep Learning : Utilisation de réseaux de neurones convolutionnels (CNN) pour extraire des caractéristiques complexes.
+\end{itemize}
+\textbf{Exemple :} Recherche d’images similaires à partir d’un croquis ou d’une photo.
+
+\subsection{Recherche audio}
+\textbf{Techniques utilisées :}
+\begin{itemize}
+    \item Spectrogrammes : Représentation visuelle des fréquences dans un signal audio.
+    \item Fingerprints audio : Création d’une empreinte unique basée sur des fréquences et des rythmes.
+    \item Apprentissage automatique : Modèles d’apprentissage supervisé pour identifier des genres ou des instruments.
+\end{itemize}
+\textbf{Exemple :} Retrouver une chanson en fredonnant une mélodie (Shazam).
+
+\subsection{ Recherche vidéo}
+\textbf{Techniques utilisées :}
+\begin{itemize}
+    \item Analyse de frames : Extraction de caractéristiques à partir d’images individuelles dans une vidéo.
+    \item Reconnaissance de scènes : Identification de contextes ou objets spécifiques dans une séquence.
+    \item Indexation spatio-temporelle : Analyse des mouvements et changements dans le temps.
+\end{itemize}
+\textbf{Exemple :} Recherche de vidéos sportives contenant un type de but spécifique.
+
+\subsection{ Recherche textuelle}
+\textbf{Techniques utilisées :}
+\begin{itemize}
+    \item TF-IDF (Term Frequency-Inverse Document Frequency) : Évaluation de l’importance des mots dans un document.
+    \item Word Embeddings : Représentation vectorielle des mots (ex. Word2Vec, GloVe).
+    \item Recherche sémantique : Utilisation de modèles NLP pour comprendre le contexte.
+\end{itemize}
+\textbf{Exemple :} Rechercher des articles similaires à un texte donné.
+
+\section{Méthodologies détaillées}
+\subsection{ Extraction de caractéristiques}
+Chaque type de contenu possède des descripteurs spécifiques :
+\begin{itemize}
+    \item \textbf{Images} : Histogrammes, gradients orientés (HOG), descripteurs locaux comme SIFT ou SURF.
+    \item \textbf{Audio} : Coefficients cepstraux (MFCC), analyses FFT (Fast Fourier Transform).
+    \item \textbf{Vidéo} : Fusion des caractéristiques spatiales (images) et temporelles (mouvements).
+    \item \textbf{Texte} : Analyse syntaxique, fréquence des mots, bigrammes/trigrammes.
+\end{itemize}
+
+\subsection{Mesures de similarité}
+Les mesures varient en fonction du type de données :
+\begin{itemize}
+    \item Distance Euclidienne : Mesure classique entre vecteurs.
+    \item Cosine Similarity : Pour comparer des documents textuels.
+    \item Intersection d’histogrammes : Adaptée aux données d’image.
+    \item Distance de Levenshtein : Pour évaluer les différences entre chaînes de caractères.
+\end{itemize}
+
+\subsection{Apprentissage automatique}
+Utilisation de techniques modernes pour améliorer la pertinence :
+\begin{itemize}
+    \item Clustering : Organisation non supervisée des données (ex. K-Means).
+    \item Classification supervisée : Modèles comme les SVM ou les réseaux neuronaux pour catégoriser les données.
+    \item Deep Learning : Approches complexes basées sur des réseaux de neurones profonds (CNN pour les images, RNN/LSTM pour les séquences).
+\end{itemize}
+
+\section{Avantages des CBR}
+\begin{enumerate}
+    \item Recherche basée sur le contenu réel plutôt que des étiquettes parfois erronées.
+    \item Permet la recherche d'éléments visuels, sonores ou textuels avec une précision accrue.
+    \item Exploitation des capacités d’intelligence artificielle pour s’adapter à des bases de données massives.
+\end{enumerate}
+
+\section{Défis et limites}
+\begin{enumerate}
+    \item Complexité calculatoire : Traitement et comparaison des descripteurs peuvent être coûteux pour de larges bases de données.
+    \item Qualité des caractéristiques : Une mauvaise extraction peut nuire à la pertinence des résultats.
+    \item Subjectivité : Les descripteurs ne capturent pas toujours la perception humaine (exemple : beauté subjective dans une image).
+\end{enumerate}
+\end{section}
