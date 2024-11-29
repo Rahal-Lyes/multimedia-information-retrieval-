@@ -1,0 +1,60 @@
+\begin{section}
+
+  \chapter{Apprentissage Automatique et Approches Profondes pour le MIR}
+
+Les techniques modernes d'Apprentissage Automatique et d'Apprentissage Profond jouent un rôle clé dans la récupération d'informations musicales (Music Information Retrieval - MIR). Elles permettent d'analyser et de traiter automatiquement des données musicales pour des tâches variées.
+
+\section{Apprentissage Automatique (Machine Learning)}
+Les approches traditionnelles se basent sur l'extraction de caractéristiques musicales spécifiques avant d'utiliser des modèles pour les analyser.
+\subsection*{Caractéristiques couramment utilisées}
+\begin{itemize}
+    \item \textbf{MFCC (Coefficients cepstraux)} : Détectent les propriétés acoustiques d'un son.
+    \item \textbf{Descripteurs rythmiques et harmoniques} : Analyser les motifs de rythme et de tonalité.
+\end{itemize}
+
+\subsection*{Modèles classiques}
+\begin{itemize}
+    \item \textbf{KNN et SVM} : Pour classer les genres musicaux ou reconnaître les instruments.
+    \item \textbf{Hidden Markov Models (HMM)} : Utilisés pour la transcription musicale et l'analyse séquentielle.
+\end{itemize}
+
+\subsection*{Applications}
+\begin{itemize}
+    \item Classification des genres musicaux.
+    \item Reconnaissance des instruments.
+    \item Analyse des émotions musicales.
+\end{itemize}
+
+\section{Apprentissage Profond (Deep Learning)}
+Les réseaux neuronaux profonds permettent d’analyser directement les signaux audio pour capturer des caractéristiques complexes sans extraction préalable.
+
+\subsection*{Techniques principales}
+\begin{itemize}
+    \item \textbf{CNN (Convolutional Neural Networks)} : Pour analyser les spectrogrammes et détecter des motifs acoustiques.
+    \item \textbf{RNN et LSTM (Long Short-Term Memory)} : Pour modéliser les relations temporelles dans la musique.
+    \item \textbf{GANs (Generative Adversarial Networks)} : Pour générer de nouvelles compositions musicales.
+\end{itemize}
+
+\subsection*{Applications}
+\begin{itemize}
+    \item Recherche de morceaux similaires.
+    \item Annotation automatique des émotions.
+    \item Création musicale et transcription.
+\end{itemize}
+
+\section{Comparaison}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|>{\centering\arraybackslash}p{4cm}|>{\centering\arraybackslash}p{5cm}|>{\centering\arraybackslash}p{5cm}|}
+\hline
+\textbf{Aspect} & \textbf{Apprentissage Automatique} & \textbf{Apprentissage Profond} \\
+\hline
+Extraction manuelle & Nécessaire & Automatique \\
+\hline
+Performances & Moyenne & Élevée sur de grands ensembles \\
+\hline
+Complexité & Simple & Nécessite plus de ressources \\
+\hline
+\end{tabular}
+
+
+\end{section} 

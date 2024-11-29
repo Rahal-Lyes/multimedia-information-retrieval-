@@ -1,0 +1,84 @@
+\begin{section}
+
+  \chapter{Fusion de Modèles Multimodaux pour l’Amélioration de la Recherche}
+
+
+
+\section{Introduction à la fusion multimodale}
+La récupération multimodale intègre des informations provenant de différents types de données (texte, images, audio, vidéo) pour améliorer les performances des systèmes de recherche. L’objectif est de surmonter les limitations des approches unimodales en exploitant les complémentarités entre les modalités.
+\setcounter{section}{1}
+\section{Techniques de fusion}
+\subsection{Fusion précoce (Early Fusion)}
+\begin{itemize}
+    \item Combine les caractéristiques extraites de différentes modalités avant le traitement.
+    \item Par exemple, concaténer des vecteurs représentant du texte et des images dans un espace commun.
+    \item \textbf{Avantage} : garantit une interaction riche entre les modalités dès le début.
+    \item \textbf{Limite} : les modèles doivent gérer des espaces de données complexes.
+\end{itemize}
+
+\subsection{Fusion tardive (Late Fusion)}
+\begin{itemize}
+    \item Combine les résultats des modèles unimodaux après leur traitement séparé.
+    \item Exemple : Combinaison des scores de similarité textuelle et visuelle.
+    \item \textbf{Avantage} : facile à mettre en œuvre.
+    \item \textbf{Limite} : risque de perte d'information intermodale.
+\end{itemize}
+
+\subsection{Fusion hybride}
+\begin{itemize}
+    \item Mixte entre les approches précoces et tardives.
+    \item Idéal pour capturer à la fois les interactions profondes et les relations indépendantes entre les modalités.
+\end{itemize}
+
+\section{Importance des modèles d’apprentissage profond}
+Les réseaux neuronaux multimodaux, comme le modèle CLIP (Contrastive Language-Image Pretraining), ont montré leur capacité à aligner efficacement des données hétérogènes dans un espace sémantique partagé.
+
+\section{Défis et perspectives}
+\begin{itemize}
+    \item \textbf{Alignement sémantique des données} : garantir que les modalités partagent une représentation cohérente.
+    \item \textbf{Calcul intensif} requis par les modèles multimodaux.
+    \item \textbf{Perspectives} : avancées en transfert d’apprentissage et en modèles génératifs comme les transformers multimodaux.
+\end{itemize}
+
+\section{Évaluation des Systèmes de Récupération Multimédia}
+\subsection{Critères d’évaluation}
+Un système de récupération multimédia est évalué selon sa capacité à fournir des résultats pertinents et rapides. Les critères incluent :
+\begin{enumerate}
+    \item \textbf{Pertinence} : Mesure si les résultats correspondent aux intentions de l’utilisateur.
+    \item \textbf{Précision et rappel (Precision \& Recall)} :
+    \begin{itemize}
+        \item \textbf{Précision} : proportion de résultats pertinents parmi ceux retournés.
+        \item \textbf{Rappel} : proportion de résultats pertinents extraits par le système.
+    \end{itemize}
+    \item \textbf{F-score} : Une mesure combinant précision et rappel.
+\end{enumerate}
+
+\subsection{Méthodologies d’évaluation}
+\begin{enumerate}
+    \item \textbf{Basée sur des ensembles de données standardisés} :
+    \begin{itemize}
+        \item Utilisation de jeux de données étiquetés (e.g., ImageNet, COCO).
+        \item Permet de comparer différents algorithmes sur des bases communes.
+    \end{itemize}
+    \item \textbf{Tests utilisateurs} :
+    \begin{itemize}
+        \item Observer comment les utilisateurs interagissent avec le système.
+        \item Mesurer la satisfaction et la convivialité.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Défis d’évaluation}
+\begin{itemize}
+    \item \textbf{Diversité des formats de données} : Les systèmes doivent être évalués sur différents types de multimédias (images, vidéos, sons).
+    \item \textbf{Subjectivité de la pertinence} : Les perceptions des utilisateurs varient, ce qui rend difficile une évaluation uniforme.
+    \item \textbf{Évolutivité} : Les systèmes doivent être testés à grande échelle pour simuler des conditions réelles.
+\end{itemize}
+
+\subsection{Approches modernes}
+\begin{itemize}
+    \item \textbf{Mesures de pertinence pondérées} : prendre en compte des scores de pertinence gradués.
+    \item \textbf{Apprentissage par renforcement} : optimisation des systèmes en fonction des interactions utilisateur.
+    \item \textbf{Benchmarking dynamique} : utiliser des scénarios d’évaluation simulant des cas d’utilisation réels.
+\end{itemize}
+
+\end{section}

@@ -2,27 +2,45 @@
 \contentsline {chapter}{Table des matières}{1}{}%
 \contentsline {chapter}{Introduction}{3}{}%
 \contentsline {chapter}{\numberline {1}Concepts fondamentaux de MIR}{4}{}%
-\contentsline {section}{\numberline {1.1}Indexation multimodale}{4}{}%
-\contentsline {subsection}{\numberline {1.1.1}Indexation textuelle}{4}{}%
-\contentsline {subsection}{\numberline {1.1.2}Indexation visuelle}{5}{}%
-\contentsline {subsection}{\numberline {1.1.3}Indexation audio}{5}{}%
-\contentsline {section}{\numberline {1.2}Recherche d'informations multimédia}{5}{}%
-\contentsline {subsection}{\numberline {1.2.1}Modèle vectoriel}{5}{}%
-\contentsline {subsection}{\numberline {1.2.2}Modèle probabiliste}{6}{}%
-\contentsline {section}{\numberline {1.3}Requête multimodale}{6}{}%
-\contentsline {subsection}{\numberline {1.3.1}Processus de gestion des requêtes multimodales}{6}{}%
-\contentsline {paragraph}{Fusion des modalités :}{6}{}%
-\contentsline {paragraph}{Alignement sémantique :}{6}{}%
-\contentsline {paragraph}{Recherche basée sur des requêtes combinées :}{7}{}%
-\contentsline {chapter}{\numberline {2}techniques de récupération basée sur le contenu (CBR)}{8}{}%
-\contentsline {section}{\numberline {2.2}Applications pratiques}{8}{}%
-\contentsline {subsection}{\numberline {2.2.1} Recherche d’images}{8}{}%
-\contentsline {subsection}{\numberline {2.2.2}Recherche audio}{9}{}%
-\contentsline {subsection}{\numberline {2.2.3} Recherche vidéo}{9}{}%
-\contentsline {subsection}{\numberline {2.2.4} Recherche textuelle}{9}{}%
-\contentsline {section}{\numberline {2.3}Méthodologies détaillées}{10}{}%
-\contentsline {subsection}{\numberline {2.3.1} Extraction de caractéristiques}{10}{}%
-\contentsline {subsection}{\numberline {2.3.2}Mesures de similarité}{10}{}%
-\contentsline {subsection}{\numberline {2.3.3}Apprentissage automatique}{10}{}%
-\contentsline {section}{\numberline {2.4}Avantages des CBR}{11}{}%
-\contentsline {section}{\numberline {2.5}Défis et limites}{11}{}%
+\contentsline {section}{\numberline {1.2}Indexation multimodale}{4}{}%
+\contentsline {subsection}{\numberline {1.2.1}Indexation textuelle}{4}{}%
+\contentsline {subsection}{\numberline {1.2.2}Indexation visuelle}{5}{}%
+\contentsline {subsection}{\numberline {1.2.3}Indexation audio}{5}{}%
+\contentsline {section}{\numberline {1.3}Recherche d'informations multimédia}{6}{}%
+\contentsline {subsection}{\numberline {1.3.1}Modèle vectoriel}{6}{}%
+\contentsline {subsection}{\numberline {1.3.2}Modèle probabiliste}{6}{}%
+\contentsline {section}{\numberline {1.4}Requête multimodale}{6}{}%
+\contentsline {subsection}{\numberline {1.4.1}Processus de gestion des requêtes multimodales}{7}{}%
+\contentsline {section}{\numberline {1.5}Mesure de la performance}{8}{}%
+\contentsline {subsection}{\numberline {1.5.1}Précision}{8}{}%
+\contentsline {subsection}{\numberline {1.5.2}Rappel}{9}{}%
+\contentsline {subsection}{\numberline {1.5.3}F-mesure}{9}{}%
+\contentsline {chapter}{\numberline {2}techniques de récupération basée sur le contenu (CBR)}{10}{}%
+\contentsline {section}{\numberline {2.2}Applications pratiques}{10}{}%
+\contentsline {subsection}{\numberline {2.2.1} Recherche d’images}{10}{}%
+\contentsline {subsection}{\numberline {2.2.2}Recherche audio}{11}{}%
+\contentsline {subsection}{\numberline {2.2.3} Recherche vidéo}{11}{}%
+\contentsline {subsection}{\numberline {2.2.4} Recherche textuelle}{11}{}%
+\contentsline {section}{\numberline {2.3}Méthodologies détaillées}{12}{}%
+\contentsline {subsection}{\numberline {2.3.1} Extraction de caractéristiques}{12}{}%
+\contentsline {subsection}{\numberline {2.3.2}Mesures de similarité}{12}{}%
+\contentsline {subsection}{\numberline {2.3.3}Apprentissage automatique}{12}{}%
+\contentsline {section}{\numberline {2.4}Avantages des CBR}{13}{}%
+\contentsline {section}{\numberline {2.5}Défis et limites}{13}{}%
+\contentsline {chapter}{\numberline {3}Apprentissage Automatique et Approches Profondes pour le MIR}{14}{}%
+\contentsline {section}{\numberline {3.1}Apprentissage Automatique (Machine Learning)}{14}{}%
+\contentsline {section}{\numberline {3.2}Apprentissage Profond (Deep Learning)}{15}{}%
+\contentsline {section}{\numberline {3.3}Comparaison}{16}{}%
+\contentsline {chapter}{\numberline {4}Fusion de Modèles Multimodaux pour l’Amélioration de la Recherche}{17}{}%
+\contentsline {section}{\numberline {4.1}Introduction à la fusion multimodale}{17}{}%
+\contentsline {section}{\numberline {4.2}Techniques de fusion}{17}{}%
+\contentsline {subsection}{\numberline {4.2.1}Fusion précoce (Early Fusion)}{17}{}%
+\contentsline {subsection}{\numberline {4.2.2}Fusion tardive (Late Fusion)}{17}{}%
+\contentsline {subsection}{\numberline {4.2.3}Fusion hybride}{18}{}%
+\contentsline {section}{\numberline {4.3}Importance des modèles d’apprentissage profond}{18}{}%
+\contentsline {section}{\numberline {4.4}Défis et perspectives}{18}{}%
+\contentsline {section}{\numberline {4.5}Évaluation des Systèmes de Récupération Multimédia}{18}{}%
+\contentsline {subsection}{\numberline {4.5.1}Critères d’évaluation}{18}{}%
+\contentsline {subsection}{\numberline {4.5.2}Méthodologies d’évaluation}{19}{}%
+\contentsline {subsection}{\numberline {4.5.3}Défis d’évaluation}{19}{}%
+\contentsline {subsection}{\numberline {4.5.4}Approches modernes}{19}{}%
